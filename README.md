@@ -1,4 +1,4 @@
-# This will guide you to get started with find-falcon application.
+# This will guide you to get started with Admin application.
 
 ## Problem Context
 
@@ -10,7 +10,11 @@ We have to manage the user list data.
 
 #### `npm install`
 
-## Steps to find the falcone :
+## Run npm test to test the Admin application
+
+#### `npm test`
+
+## This application helps to track the user data and make changes to user data.
 
 The user data page will render the serach bar at the top and we can search the user by name, email and role.
 Once user types the search query and have to press enter to execute the search query.
