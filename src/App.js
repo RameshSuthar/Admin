@@ -92,7 +92,7 @@ function App() {
       arr[user.id] = selectAll;
     })
     setCheckBoxValueArr(arr);
-  }, [selectAll]);
+  }, [selectAll, checkBoxValueArr, pageUsers]);
 
   const handleOnSearch = (val) => {
     const searchRes = usersList.filter((user) => {
