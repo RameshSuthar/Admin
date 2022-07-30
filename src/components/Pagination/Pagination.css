@@ -5,6 +5,10 @@
 .pagination-list {
     display: flex;
     list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .pagination-list li {
