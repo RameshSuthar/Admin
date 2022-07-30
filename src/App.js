@@ -2,7 +2,7 @@ import './App.css';
 import UserList from './components/UserList/UserList';
 import { API_URL } from './app-constants';
 import Search from './components/Search/Search';
-import { useState, useEffect, useReducer } from 'react';
+import { useState, useEffect } from 'react';
 import Pagination from './components/Pagination/Pagination';
 
 function App() {
@@ -88,13 +88,6 @@ function App() {
 
   useEffect(() => {
     const arr = [...checkBoxValueArr];
-    // arr.forEach((value, i) => {
-    //   if(i > 0 && i >= Number(pageUsers[0]?.id) && i <= Number(pageUsers[pageUsers.length-1]?.id)) {
-    //     arr[i] = selectAll;
-    //   } else {
-    //     arr[i] = false;
-    //   }
-    // });
     pageUsers.forEach(user => {
       arr[user.id] = selectAll;
     })

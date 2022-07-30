@@ -13,7 +13,7 @@ test('displays delete selected button', async () => {
 
 test('should render 10 users per page', async () => {
   const { container } = render(<App />);
-  const items = await screen.findAllByRole('user-item');
+  const items = await screen.findAllByTestId('user-item');
   expect(items).toHaveLength(10);
 })
 

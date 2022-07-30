@@ -14,7 +14,7 @@ const checkBoxArr = [false, false, false, false, false];
 describe('Should render the correct list of users', () => {
     it('should render the correct length of users', async () => {
         render(<UserList usersList={usersList} isEditArr={isEditArr} checkBoxValueArr={checkBoxArr}/>)
-        const users = await screen.findAllByRole('user-item');
+        const users = await screen.findAllByTestId('user-item');
         expect(users).toHaveLength(usersList.length);
     });
 });

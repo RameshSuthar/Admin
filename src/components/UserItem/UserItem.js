@@ -35,24 +35,24 @@ const UserItem = ({user, selectAll, checked, setSingleCheckBox, setSingleIsEditV
 
     return (
         (!isEdit ? 
-            <tr role="user-item" className={(checked ? 'dark-bg' : "")}>
-                <td role="user-checkbox"><input type="checkbox" checked={checked} onChange={handleOnChangeOfSingleCheckbox}></input></td>
-                <td role="user-name">{user.name}</td>
-                <td role="user-email">{user.email}</td>
-                <td role="user-role">{user.role}</td>
+            <tr data-testid="user-item" className={(checked ? 'dark-bg' : "")}>
+                <td data-testid="user-checkbox"><input type="checkbox" checked={checked} onChange={handleOnChangeOfSingleCheckbox}></input></td>
+                <td data-testid="user-name">{user.name}</td>
+                <td data-testid="user-email">{user.email}</td>
+                <td data-testid="user-role">{user.role}</td>
                 <td>
-                    <div role="user-delete" onClick={handleOnClickDelete} className="delete"></div>
-                    <div role="user-edit" onClick={handleOnClickOfEdit} className="edit"></div>
+                    <div data-testid="user-delete" onClick={handleOnClickDelete} className="delete"></div>
+                    <div data-testid="user-edit" onClick={handleOnClickOfEdit} className="edit"></div>
                 </td>
             </tr> 
         : 
-            <tr role="user-item">
-                <td role="user-checkbox"><input type="checkbox" disabled onChange={handleOnChangeOfSingleCheckbox}></input></td>
-                <td role="user-name"><input type="text" value={updatedUser.name} name="name" onChange={handleOnChange}></input></td>
-                <td role="user-email"><input type="email" value={updatedUser.email} name="email" onChange={handleOnChange}></input></td>
-                <td role="user-role"><input type="text" value={updatedUser.role} name="role" onChange={handleOnChange}></input></td>
+            <tr data-testid="user-item">
+                <td data-testid="user-checkbox"><input type="checkbox" disabled onChange={handleOnChangeOfSingleCheckbox}></input></td>
+                <td data-testid="user-name"><input type="text" value={updatedUser.name} name="name" onChange={handleOnChange}></input></td>
+                <td data-testid="user-email"><input type="email" value={updatedUser.email} name="email" onChange={handleOnChange}></input></td>
+                <td data-testid="user-role"><input type="text" value={updatedUser.role} name="role" onChange={handleOnChange}></input></td>
                 <td>
-                    <div role="user-update" onClick={handleOnClickOfUpdate} className="update">
+                    <div data-testid="user-update" onClick={handleOnClickOfUpdate} className="update">
                     </div>
                 </td>
             </tr>
