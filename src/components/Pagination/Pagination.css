@@ -1,0 +1,39 @@
+.pagination-wrapper {
+    display: flex;
+}
+
+.pagination-list {
+    display: flex;
+    list-style: none;
+}
+
+.pagination-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    background-color: aqua;
+    height: 35px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: auto;
+    background-color: rgb(152, 235, 235);
+}
+
+.selected {
+    color: aqua;
+    background-color: #fff !important;
+    border: 1px solid aqua;
+}
+
+@media screen and (max-width: 740px) {
+    .pagination-wrapper {
+        flex: auto;
+    }
+}

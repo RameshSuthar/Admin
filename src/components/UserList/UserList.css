@@ -1,0 +1,10 @@
+.UserList-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.UserList-wrapper table {
+    background-color: #fafcff;
+    width: 100%;
+    text-align: left;
+}

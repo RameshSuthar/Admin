@@ -1,38 +1,59 @@
 .App {
-  text-align: center;
+  display: grid;
+  width: calc(100% - 300px);
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table, td, th {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td, th {
+  padding: 9px 0px 9px 9px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"] {
+  width: 6ch;
+}
+
+input {
+  margin: 0px;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.delete-all-btn {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 15px 0px;
+  background-color: #ff0000;
   color: white;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-btn-wrapper{
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.msg-box {
+  justify-content: center;
+  width: calc(100% - 300px);
+  height: 460px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+  .App {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .pagination-btn-wrapper {
+    flex-wrap: wrap;
+    display: inline-flex;
   }
 }
